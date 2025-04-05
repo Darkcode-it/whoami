@@ -1,3 +1,306 @@
 {
-  "hello": "hi"
+  "hello": "hi",
+  "menu": {
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "education": "Education",
+    "certifications": "Certifications",
+    "skills": "Skills",
+    "portfolio": "Portfolio",
+    "services": "Services"
+  },
+  "name": "Ahmad Rasouli",
+  "jobTitle": "Front-End Developer",
+  "about": {
+    "title": "Discover My Journey",
+    "description": [
+      "Seasoned front-end architect with 2+ years of experience in crafting high-performance web applications. Specialized in React ecosystem and modern JavaScript practices, with a strong focus on accessibility and performance optimization.",
+      "Passionate about creating immersive digital experiences that blend technical excellence with artistic vision. Continuously exploring emerging technologies to deliver cutting-edge solutions.",
+      "Open-source contributor and technical writer, actively engaged in knowledge sharing through blog posts and workshop facilitation."
+    ],
+    "portfolio": "Technical Portfolio",
+    "resume": {
+      "url": "https://darkcode-it.github.io/whoami/",
+      "label": "Download Professional Profile"
+    }
+  },
+  "experience": {
+    "title": "Professional Journey",
+    "subtitle": "Bridging development expertise with security-first approach",
+    "skillCategories": {
+      "development": "Development Expertise",
+      "security": "Security Specialization",
+      "tools": "Tools & Platforms"
+    },
+    "items": [
+      {
+        "id": 1,
+        "role": "Front-End Developer & Cybersecurity Specialist",
+        "type": "Self-Initiated Projects",
+        "period": "March - April 2025",
+        "description": "Combining web development expertise with cybersecurity research to create secure and modern web solutions",
+        "skills": {
+          "development": [
+            "React Architecture", "Tailwind CSS", "Responsive Design",
+            "Web Performance", "REST APIs", "Webpack"
+          ],
+          "cybersecurity": [
+            "Penetration Testing", "Threat Analysis", "OWASP Top 10",
+            "Network Security", "Cryptography", "SIEM Tools"
+          ],
+          "tools": [
+            "Kali Linux", "Burp Suite", "Wireshark",
+            "Metasploit", "Nmap", "Docker"
+          ]
+        }
+      }
+    ]
+  },
+  "education": {
+    "title": "Academic Journey",
+    "subtitle": "Formal education and academic achievements shaping my professional foundation",
+    "completed": "Completed",
+    "items": [
+      {
+        "id": 1,
+        "title": "Diploma in Veterinary and Animal Nutrition",
+        "institution": "Iranian National Education System",
+        "description": "Studied animal health and nutrition with a focus on practical applications",
+        "year": "2014",
+        "iconName": "AcademicCapIcon",
+        "highlights": [
+          "Focus on biochemistry and microbiology",
+          "Practical laboratory training",
+          "Animal physiology specialization"
+        ]
+      },
+      {
+        "id": 2,
+        "title": "National Entrance Exam Achievement",
+        "institution": "Iranian University Entrance System",
+        "description": "Ranked 133rd in the 2014 National Entrance Exam",
+        "year": "2014",
+        "iconName": "TrophyIcon",
+        "highlights": [
+          "Top 0.5% of participants",
+          "Competitive STEM-focused exam",
+          "Quantitative analysis specialization"
+        ]
+      }
+    ]
+  },
+  "skills": {
+    "title": "Skills",
+    "noSkills": "No skills to display",
+    "items": [
+      {
+        "name": "HTML",
+        "image": "./images/html5.png",
+        "customClass": ""
+      },
+      {
+        "name": "CSS",
+        "image": "./images/css3.png",
+        "customClass": ""
+      },
+      {
+        "name": "Tailwind CSS",
+        "image": "./images/tailwind.png",
+        "customClass": "-ml-2"
+      },
+      {
+        "name": "JavaScript",
+        "image": "./images/js.png",
+        "imageClass": "w-[53px]",
+        "customClass": ""
+      },
+      {
+        "name": "React",
+        "image": "./images/react.png",
+        "customClass": ""
+      },
+      {
+        "name": "Panel Development",
+        "image": "./images/Web Panel.png",
+        "customClass": ""
+      },
+      {
+        "name": "Penetration Testing",
+        "image": "./images/testing.png",
+        "customClass": ""
+      },
+      {
+        "name": "SQL Injection",
+        "image": "./images/sql.png",
+        "customClass": ""
+      },
+      {
+        "name": "Malware Development",
+        "image": "./images/malware.png",
+        "customClass": ""
+      },
+      {
+        "name": "DDoS Attacks (Python)",
+        "image": "./images/ddos.png",
+        "customClass": ""
+      },
+      {
+        "name": "Telegram Channel Disruption",
+        "image": "./images/disruption.png",
+        "customClass": ""
+      },
+      {
+        "name": "Network+",
+        "image": "./images/network_26812.png",
+        "customClass": "-ml-2"
+      },
+      {
+        "name": "VPS Services",
+        "image": "./images/vps.png",
+        "customClass": ""
+      },
+      {
+        "name": "Kali Linux",
+        "image": "./images/linux.png",
+        "customClass": ""
+      },
+      {
+        "name": "Tails OS 5.0",
+        "image": "./images/boum_tails_logo_icon_169468.png",
+        "customClass": "-ml-2"
+      }
+    ]
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "description": "The projects may not be perfect from your point of view, but I make them more perfect every day",
+    "viewAll": "View all projects",
+    "viewSource": "View Source",
+    "projects": [
+      {
+        "title": "React App",
+        "image": "./images/zero.png",
+        "link": "https://darkcode-it.github.io/test-app/",
+        "repo": "https://github.com/Darkcode-it/test-app",
+        "tags": ["Css", "npx"],
+        "description": ""
+      },
+      {
+        "title": "React App",
+        "image": "./images/first.png",
+        "link": "https://darkcode-it.github.io/my-project/",
+        "repo": "https://github.com/Darkcode-it/my-project",
+        "tags": [],
+        "description": ""
+      },
+      {
+        "title": "React App",
+        "image": "./images/Estatery.png",
+        "link": "https://darkcode-it.github.io/2pro-react/",
+        "repo": "https://github.com/Darkcode-it/2pro-react",
+        "tags": [],
+        "description": ""
+      },
+      {
+        "title": "The Project Python",
+        "image": "./images/ddos.jpeg",
+        "link": "https://github.com/Darkcode-it/DDOS",
+        "repo": "https://github.com/Darkcode-it/DDOS",
+        "tags": [],
+        "description": "A type of DDOS that changes the port and IP with each operation.",
+        "warning": "DDOS"
+      },
+      {
+        "title": "The Project Python",
+        "image": "./images/Blocker.png",
+        "link": "https://github.com/Darkcode-it/Blocker.py",
+        "repo": "https://github.com/Darkcode-it/Blocker.py",
+        "tags": [],
+        "description": "A type of DDOS that changes the port and IP with each operation. With this tool you can eliminate bad Telegram channels.",
+        "warning": "Blocker"
+      },
+      {
+        "title": "React App",
+        "image": "./images/fourth.png",
+        "link": "https://darkcode-it.github.io/Movie/",
+        "repo": "https://github.com/Darkcode-it/Movie",
+        "tags": ["React", "Tailwind", "Vit"],
+        "description": ""
+      },
+      {
+        "title": "React App",
+        "image": "./images/khanoo.png",
+        "link": "https://darkcode-it.github.io/Khano-app/",
+        "repo": "https://github.com/Darkcode-it/Khano-app",
+        "tags": ["React", "Tailwind", "Vit"],
+        "description": ""
+      },
+      {
+        "title": "React App",
+        "image": "./images/is.png",
+        "link": "https://darkcode-it.github.io/whoami/",
+        "repo": "https://github.com/Darkcode-it/whoami",
+        "tags": ["React", "Tailwind", "Vit"],
+        "description": ""
+      },
+      {
+        "title": "React App",
+        "image": "./images/todo.png",
+        "link": "https://preview--persia-todo-task.lovable.app/",
+        "repo": "https://github.com/Darkcode-it/persia-todo-task",
+        "tags": ["React", "Tailwind", "Vit"],
+        "description": ""
+      }
+    ]
+  },
+  "services": {
+    "title": "Professional Services",
+    "subtitle": "Tailored solutions to bring your digital vision to life",
+    "items": [
+      {
+        "id": 1,
+        "title": "Custom Template Implementation",
+        "description": "Professional implementation of your design templates with pixel-perfect accuracy, optimized for performance and accessibility across all devices.",
+        "iconName": "FiLayers",
+        "highlights": [
+          "HTML5/CSS3 Implementation",
+          "Mobile-First Approach",
+          "Cross-Browser Compatibility",
+          "Performance Optimization"
+        ]
+      },
+      {
+        "id": 2,
+        "title": "React & NextJS Development",
+        "description": "Enterprise-grade application development using modern React ecosystem with focus on scalability, maintainability and security best practices.",
+        "iconName": "FiCode",
+        "highlights": [
+          "SSR/SSG with Next.js",
+          "State Management",
+          "API Integration",
+          "Testing (Jest/Cypress)"
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Technical Mentorship",
+        "description": "Personalized 1:1 coaching sessions to accelerate your learning curve in modern frontend development and software engineering principles.",
+        "iconName": "FiBookOpen",
+        "highlights": [
+          "Career Roadmapping",
+          "Code Reviews",
+          "Project Architecture",
+          "Interview Preparation"
+        ]
+      }
+    ]
+  },
+  "certifications": {
+    "title": "Certifications"
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "contact": "Contact"
+  }
 }

@@ -1,3 +1,306 @@
 {
-  "hello": " سلام چونی براکم وضعت چونه "
+  "hello": "سلام",
+  "menu": {
+    "home": "خانه",
+    "about": "درباره من",
+    "experience": "تجربیات",
+    "education": "تحصیلات",
+    "certifications": "گواهینامه‌ها",
+    "skills": "مهارت‌ها",
+    "portfolio": "نمونه کارها",
+    "services": "خدمات"
+  },
+  "name": "احمد رسولی",
+  "jobTitle": "توسعه‌دهنده فرانت‌اند",
+  "about": {
+    "title": "با سفر من آشنا شوید",
+    "description": [
+      "معمار فرانت‌اند با بیش از ۲ سال تجربه در ساخت برنامه‌های وب با کارایی بالا. تخصص در اکوسیستم ری‌اکت و شیوه‌های مدرن جاوااسکریپت، با تمرکز ویژه بر دسترسی‌پذیری و بهینه‌سازی عملکرد.",
+      "مشتاق به ایجاد تجربه‌های دیجیتالی غوطه‌ور که تعالی فنی را با بینش هنری ترکیب می‌کند. به طور مداوم در حال کشف فناوری‌های نوظهور برای ارائه راه‌حل‌های پیشرفته.",
+      "مشارکت‌کننده منبع باز و نویسنده فنی، که فعالانه در اشتراک‌گذاری دانش از طریق پست‌های وبلاگ و تسهیل کارگاه‌ها مشارکت دارد."
+    ],
+    "portfolio": "نمونه کار فنی",
+    "resume": {
+      "url": "https://darkcode-it.github.io/whoami/",
+      "label": "دانلود پروفایل حرفه‌ای"
+    }
+  },
+  "experience": {
+    "title": "مسیر حرفه‌ای",
+    "subtitle": "پیوند دادن تخصص توسعه با رویکرد امنیت-محور",
+    "skillCategories": {
+      "development": "تخصص توسعه",
+      "security": "تخصص امنیتی",
+      "tools": "ابزارها و پلتفرم‌ها"
+    },
+    "items": [
+      {
+        "id": 1,
+        "role": "توسعه‌دهنده فرانت‌اند و متخصص امنیت سایبری",
+        "type": "پروژه‌های خود-محور",
+        "period": "مارس - آوریل ۲۰۲۵",
+        "description": "ترکیب تخصص توسعه وب با تحقیقات امنیت سایبری برای ایجاد راه‌حل‌های وب امن و مدرن",
+        "skills": {
+          "development": [
+            "معماری ری‌اکت", "تیلویند CSS", "طراحی واکنش‌گرا",
+            "عملکرد وب", "REST APIs", "وب‌پک"
+          ],
+          "cybersecurity": [
+            "تست نفوذ", "تحلیل تهدید", "OWASP Top 10",
+            "امنیت شبکه", "رمزنگاری", "ابزارهای SIEM"
+          ],
+          "tools": [
+            "کالی لینوکس", "Burp Suite", "وایرشارک",
+            "متاسپلویت", "Nmap", "داکر"
+          ]
+        }
+      }
+    ]
+  },
+  "education": {
+    "title": "سفر تحصیلی",
+    "subtitle": "تحصیلات رسمی و دستاوردهای علمی که پایه حرفه‌ای من را شکل می‌دهند",
+    "completed": "تکمیل شده",
+    "items": [
+      {
+        "id": 1,
+        "title": "دیپلم دامپزشکی و تغذیه حیوانات",
+        "institution": "سیستم آموزش ملی ایران",
+        "description": "مطالعه سلامت و تغذیه حیوانات با تمرکز بر کاربردهای عملی",
+        "year": "۱۳۹۳",
+        "iconName": "AcademicCapIcon",
+        "highlights": [
+          "تمرکز بر بیوشیمی و میکروبیولوژی",
+          "آموزش عملی آزمایشگاهی",
+          "تخصص در فیزیولوژی حیوانات"
+        ]
+      },
+      {
+        "id": 2,
+        "title": "دستاورد آزمون ورودی سراسری",
+        "institution": "سیستم ورودی دانشگاه‌های ایران",
+        "description": "رتبه ۱۳۳ در آزمون ورودی سراسری سال ۱۳۹۳",
+        "year": "۱۳۹۳",
+        "iconName": "TrophyIcon",
+        "highlights": [
+          "در ۰.۵٪ برتر شرکت‌کنندگان",
+          "آزمون رقابتی با تمرکز بر علوم پایه",
+          "تخصص در تحلیل کمّی"
+        ]
+      }
+    ]
+  },
+  "skills": {
+    "title": "مهارت‌ها",
+    "noSkills": "هیچ مهارتی برای نمایش وجود ندارد",
+    "items": [
+      {
+        "name": "HTML",
+        "image": "./images/html5.png",
+        "customClass": ""
+      },
+      {
+        "name": "CSS",
+        "image": "./images/css3.png",
+        "customClass": ""
+      },
+      {
+        "name": "Tailwind CSS",
+        "image": "./images/tailwind.png",
+        "customClass": "-ml-2"
+      },
+      {
+        "name": "JavaScript",
+        "image": "./images/js.png",
+        "imageClass": "w-[53px]",
+        "customClass": ""
+      },
+      {
+        "name": "React",
+        "image": "./images/react.png",
+        "customClass": ""
+      },
+      {
+        "name": "Panel Development",
+        "image": "./images/Web Panel.png",
+        "customClass": ""
+      },
+      {
+        "name": "Penetration Testing",
+        "image": "./images/testing.png",
+        "customClass": ""
+      },
+      {
+        "name": "SQL Injection",
+        "image": "./images/sql.png",
+        "customClass": ""
+      },
+      {
+        "name": "Malware Development",
+        "image": "./images/malware.png",
+        "customClass": ""
+      },
+      {
+        "name": "DDoS Attacks (Python)",
+        "image": "./images/ddos.png",
+        "customClass": ""
+      },
+      {
+        "name": "Telegram Channel Disruption",
+        "image": "./images/disruption.png",
+        "customClass": ""
+      },
+      {
+        "name": "Network+",
+        "image": "./images/network_26812.png",
+        "customClass": "-ml-2"
+      },
+      {
+        "name": "VPS Services",
+        "image": "./images/vps.png",
+        "customClass": ""
+      },
+      {
+        "name": "Kali Linux",
+        "image": "./images/linux.png",
+        "customClass": ""
+      },
+      {
+        "name": "Tails OS 5.0",
+        "image": "./images/boum_tails_logo_icon_169468.png",
+        "customClass": "-ml-2"
+      }
+    ]
+  },
+  "portfolio": {
+    "title": "نمونه کارها",
+    "description": "ممکن است پروژه‌ها از نظر شما کامل نباشند، اما من هر روز آنها را کامل‌تر می‌کنم",
+    "viewAll": "مشاهده همه پروژه‌ها",
+    "viewSource": "مشاهده منبع",
+    "projects": [
+      {
+        "title": "اپلیکیشن ری‌اکت",
+        "image": "./images/zero.png",
+        "link": "https://darkcode-it.github.io/test-app/",
+        "repo": "https://github.com/Darkcode-it/test-app",
+        "tags": ["Css", "npx"],
+        "description": ""
+      },
+      {
+        "title": "اپلیکیشن ری‌اکت",
+        "image": "./images/first.png",
+        "link": "https://darkcode-it.github.io/my-project/",
+        "repo": "https://github.com/Darkcode-it/my-project",
+        "tags": [],
+        "description": ""
+      },
+      {
+        "title": "اپلیکیشن ری‌اکت",
+        "image": "./images/Estatery.png",
+        "link": "https://darkcode-it.github.io/2pro-react/",
+        "repo": "https://github.com/Darkcode-it/2pro-react",
+        "tags": [],
+        "description": ""
+      },
+      {
+        "title": "پروژه پایتون",
+        "image": "./images/ddos.jpeg",
+        "link": "https://github.com/Darkcode-it/DDOS",
+        "repo": "https://github.com/Darkcode-it/DDOS",
+        "tags": [],
+        "description": "نوعی حمله DDoS که پورت و IP را با هر عملیات تغییر می‌دهد.",
+        "warning": "حمله DDoS"
+      },
+      {
+        "title": "پروژه پایتون",
+        "image": "./images/Blocker.png",
+        "link": "https://github.com/Darkcode-it/Blocker.py",
+        "repo": "https://github.com/Darkcode-it/Blocker.py",
+        "tags": [],
+        "description": "نوعی حمله DDoS که پورت و IP را با هر عملیات تغییر می‌دهد. با این ابزار می‌توانید کانال‌های بد تلگرام را حذف کنید.",
+        "warning": "مسدودکننده"
+      },
+      {
+        "title": "اپلیکیشن ری‌اکت",
+        "image": "./images/fourth.png",
+        "link": "https://darkcode-it.github.io/Movie/",
+        "repo": "https://github.com/Darkcode-it/Movie",
+        "tags": ["ری‌اکت", "تیلویند", "ویت"],
+        "description": ""
+      },
+      {
+        "title": "اپلیکیشن ری‌اکت",
+        "image": "./images/khanoo.png",
+        "link": "https://darkcode-it.github.io/Khano-app/",
+        "repo": "https://github.com/Darkcode-it/Khano-app",
+        "tags": ["ری‌اکت", "تیلویند", "ویت"],
+        "description": ""
+      },
+      {
+        "title": "اپلیکیشن ری‌اکت",
+        "image": "./images/is.png",
+        "link": "https://darkcode-it.github.io/whoami/",
+        "repo": "https://github.com/Darkcode-it/whoami",
+        "tags": ["ری‌اکت", "تیلویند", "ویت"],
+        "description": ""
+      },
+      {
+        "title": "اپلیکیشن ری‌اکت",
+        "image": "./images/todo.png",
+        "link": "https://preview--persia-todo-task.lovable.app/",
+        "repo": "https://github.com/Darkcode-it/persia-todo-task",
+        "tags": ["ری‌اکت", "تیلویند", "ویت"],
+        "description": ""
+      }
+    ]
+  },
+  "services": {
+    "title": "خدمات حرفه‌ای",
+    "subtitle": "راه‌حل‌های سفارشی برای زنده کردن چشم‌انداز دیجیتال شما",
+    "items": [
+      {
+        "id": 1,
+        "title": "پیاده‌سازی قالب سفارشی",
+        "description": "پیاده‌سازی حرفه‌ای قالب‌های طراحی شما با دقت پیکسل-پرفکت، بهینه‌سازی‌شده برای عملکرد و دسترسی‌پذیری در تمام دستگاه‌ها.",
+        "iconName": "FiLayers",
+        "highlights": [
+          "پیاده‌سازی HTML5/CSS3",
+          "رویکرد موبایل-اول",
+          "سازگاری با تمام مرورگرها",
+          "بهینه‌سازی عملکرد"
+        ]
+      },
+      {
+        "id": 2,
+        "title": "توسعه ری‌اکت و نکست‌جی‌اس",
+        "description": "توسعه برنامه سطح سازمانی با استفاده از اکوسیستم مدرن ری‌اکت با تمرکز بر مقیاس‌پذیری، قابلیت نگهداری و بهترین شیوه‌های امنیتی.",
+        "iconName": "FiCode",
+        "highlights": [
+          "SSR/SSG با نکست‌جی‌اس",
+          "مدیریت استیت",
+          "یکپارچه‌سازی API",
+          "تست (جست/سایپرس)"
+        ]
+      },
+      {
+        "id": 3,
+        "title": "منتورشیپ فنی",
+        "description": "جلسات آموزشی ۱ به ۱ شخصی‌سازی شده برای تسریع منحنی یادگیری شما در توسعه فرانت‌اند مدرن و اصول مهندسی نرم‌افزار.",
+        "iconName": "FiBookOpen",
+        "highlights": [
+          "ترسیم مسیر شغلی",
+          "بررسی کد",
+          "معماری پروژه",
+          "آمادگی مصاحبه"
+        ]
+      }
+    ]
+  },
+  "certifications": {
+    "title": "گواهینامه‌ها"
+  },
+  "footer": {
+    "rights": "تمامی حقوق محفوظ است",
+    "contact": "تماس"
+  }
 }
