@@ -21,7 +21,7 @@
     ],
     "portfolio": "Technical Portfolio",
     "resume": {
-      "url": "https://darkcode-it.github.io/whoami/",
+      "url": "./resume/AhmadRasouli.pdf",
       "label": "Download Professional Profile"
     }
   },
@@ -42,16 +42,28 @@
         "description": "Combining web development expertise with cybersecurity research to create secure and modern web solutions",
         "skills": {
           "development": [
-            "React Architecture", "Tailwind CSS", "Responsive Design",
-            "Web Performance", "REST APIs", "Webpack"
+            "React Architecture",
+            "Tailwind CSS",
+            "Responsive Design",
+            "Web Performance",
+            "REST APIs",
+            "Webpack"
           ],
           "cybersecurity": [
-            "Penetration Testing", "Threat Analysis", "OWASP Top 10",
-            "Network Security", "Cryptography", "SIEM Tools"
+            "Penetration Testing",
+            "Threat Analysis",
+            "OWASP Top 10",
+            "Network Security",
+            "Cryptography",
+            "SIEM Tools"
           ],
           "tools": [
-            "Kali Linux", "Burp Suite", "Wireshark",
-            "Metasploit", "Nmap", "Docker"
+            "Kali Linux",
+            "Burp Suite",
+            "Wireshark",
+            "Metasploit",
+            "Nmap",
+            "Docker"
           ]
         }
       }
@@ -183,7 +195,10 @@
         "image": "./images/zero.png",
         "link": "https://darkcode-it.github.io/test-app/",
         "repo": "https://github.com/Darkcode-it/test-app",
-        "tags": ["Css", "npx"],
+        "tags": [
+          "Css",
+          "npx"
+        ],
         "description": ""
       },
       {
@@ -225,7 +240,11 @@
         "image": "./images/fourth.png",
         "link": "https://darkcode-it.github.io/Movie/",
         "repo": "https://github.com/Darkcode-it/Movie",
-        "tags": ["React", "Tailwind", "Vit"],
+        "tags": [
+          "React",
+          "Tailwind",
+          "Vit"
+        ],
         "description": ""
       },
       {
@@ -233,7 +252,11 @@
         "image": "./images/khanoo.png",
         "link": "https://darkcode-it.github.io/Khano-app/",
         "repo": "https://github.com/Darkcode-it/Khano-app",
-        "tags": ["React", "Tailwind", "Vit"],
+        "tags": [
+          "React",
+          "Tailwind",
+          "Vit"
+        ],
         "description": ""
       },
       {
@@ -241,7 +264,11 @@
         "image": "./images/is.png",
         "link": "https://darkcode-it.github.io/whoami/",
         "repo": "https://github.com/Darkcode-it/whoami",
-        "tags": ["React", "Tailwind", "Vit"],
+        "tags": [
+          "React",
+          "Tailwind",
+          "Vit"
+        ],
         "description": ""
       },
       {
@@ -249,7 +276,11 @@
         "image": "./images/todo.png",
         "link": "https://preview--persia-todo-task.lovable.app/",
         "repo": "https://github.com/Darkcode-it/persia-todo-task",
-        "tags": ["React", "Tailwind", "Vit"],
+        "tags": [
+          "React",
+          "Tailwind",
+          "Vit"
+        ],
         "description": ""
       }
     ]
