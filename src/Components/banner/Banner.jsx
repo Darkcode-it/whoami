@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
 import {
@@ -9,6 +9,7 @@ import {
 } from 'react-icons/fa';
 
 import data from './Banner.json';
+import Lightning from './Lightning.jsx';
 
 const iconComponents = {
     FaGithub: FaGithub, 
@@ -17,13 +18,20 @@ const iconComponents = {
 };
 
 function Banner() {
+    const [hue, setHue] = useState(220);
     const {name, jobTitle, profileImage, socialLinks} = data;
 
     return (<section
         id="home"
-        className="relative min-h-screen flex items-center justify-center"
+        className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-        <div className="container mx-auto px-4">
+        {/* Lightning overlay only, background remains original */}
+        <div className="absolute inset-0 z-0 pointer-events-none">
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full">
+                <Lightning hue={hue} xOffset={0} speed={1.6} intensity={0.6} size={2} />
+            </div>
+        </div>
+        <div className="container mx-auto px-4 relative z-10">
             <div className="flex flex-col items-center justify-center text-center space-y-8">
                 {/* تصویر پروفایل */}
                 <div
@@ -46,6 +54,22 @@ function Banner() {
                     to-cyan-400 bg-clip-text text-transparent">
                         {name}
                     </h1>
+                    {/* Controls: Lightning hue under name */}
+                    {/* <div className="mx-auto w-full max-w-xl   rounded-xl px-4 py-3 text-sm text-gray-800">
+                        <div className="flex items-center gap-3">
+ 
+                            <input
+                                type="range"
+                                min={0}
+                                max={360}
+                                step={1}
+                                value={hue}
+                                onChange={(e)=>setHue(Number(e.target.value))}
+                                className="flex-1 accent-blue-500 cursor-pointer"
+                            />
+                            <span className="tabular-nums w-12 text-right">{hue}°</span>
+                        </div>
+                    </div> */}
                     <p className="text-2xl md:text-3xl font-medium text-gray-700">
                         {jobTitle}
                     </p>
