@@ -201,90 +201,87 @@ function Experience() {
     const { t } = useTranslation();
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 relative overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-br from-blue-400/5 via-purple-400/5 to-pink-400/5"></div>
-            <div className="absolute top-20 left-10 w-72 h-72 bg-gradient-to-r from-blue-400 to-purple-600 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-pulse"></div>
-            <div className="absolute top-40 right-10 w-72 h-72 bg-gradient-to-r from-purple-400 to-pink-600 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-pulse delay-1000"></div>
-            <div className="absolute bottom-20 left-1/2 w-72 h-72 bg-gradient-to-r from-pink-400 to-orange-400 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-pulse delay-2000"></div>
-
-            <section className="relative py-20 px-4 md:px-8" id="experience">
-                <div className="max-w-7xl mx-auto">
-                    <div className="text-center mb-20">
-                        <h3 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-gray-900 via-blue-800 to-purple-800 bg-clip-text text-transparent mb-4">
-                            {t('experience.title')}
-                        </h3>
-                        <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto rounded-full"></div>
-                    </div>
-
-                    <div className="space-y-8">
-                        {t('experience.items', { returnObjects: true }).map((item) => (
-                            <article
-                                key={item.id}
-                                className="relative bg-white/20 backdrop-blur-lg border border-white/30 rounded-2xl p-8 
-                                shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2
-                                group overflow-hidden"
-                            >
-                                {/* Gradient Overlays */}
-                                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-purple-500/10 to-pink-500/10 
-                                            opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
-                                <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-br from-blue-400/20 to-purple-400/20 
-                                            rounded-bl-2xl opacity-50"></div>
-                                <div className="absolute bottom-0 left-0 w-12 h-12 bg-gradient-to-tr from-pink-400/20 to-orange-400/20 
-                                            rounded-tr-2xl opacity-50"></div>
-
-                                {/* Header */}
-                                <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-8">
-                                    <div className="flex items-center gap-4">
-                                        <div className="p-3 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-xl backdrop-blur-sm">
-                                            <BriefcaseIcon className="w-8 h-8 text-blue-600" />
-                                        </div>
-                                        <div>
-                                            <h3 className="text-2xl font-bold text-gray-800">{item.role}</h3>
-                                            <span className="inline-block mt-2 bg-gradient-to-r from-blue-500/20 to-purple-500/20 
-                                                        text-blue-800 px-3 py-1 rounded-full text-sm font-medium backdrop-blur-sm">
-                                                {item.type}
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <span className="text-sm font-medium text-gray-600 bg-white/50 px-3 py-1 
-                                                    rounded-full backdrop-blur-sm border border-white/30">
-                                        {item.period}
-                                    </span>
-                                </div>
-
-                                {/* Description */}
-                                <p className="text-gray-600 leading-relaxed mb-8 text-lg relative z-10">
-                                    {item.description}
-                                </p>
-
-                                {/* Skills Grid */}
-                                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 relative z-10">
-                                    <SkillCategory
-                                        title={t('experience.skillCategories.development')}
-                                        icon={<CodeBracketIcon className="w-6 h-6 text-blue-600" />}
-                                        skills={item.skills.development}
-                                        color="blue"
-                                    />
-
-                                    <SkillCategory
-                                        title={t('experience.skillCategories.security')}
-                                        icon={<ShieldCheckIcon className="w-6 h-6 text-green-600" />}
-                                        skills={item.skills.cybersecurity}
-                                        color="green"
-                                    />
-
-                                    <SkillCategory
-                                        title={t('experience.skillCategories.tools')}
-                                        skills={item.skills.tools}
-                                        color="purple"
-                                    />
-                                </div>
-                            </article>
-                        ))}
-                    </div>
+        <section className="relative py-20 px-4 md:px-8" id="experience">
+            {/* Animated Gradient Circles */}
+            <div className="absolute top-20 left-16 w-64 h-64 bg-gradient-to-r from-indigo-400 to-purple-600 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-pulse"></div>
+            <div className="absolute bottom-20 right-16 w-64 h-64 bg-gradient-to-r from-pink-400 to-rose-600 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-pulse delay-1000"></div>
+            
+            <div className="max-w-7xl mx-auto">
+                <div className="text-center mb-20">
+                    <h3 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-gray-900 via-blue-800 to-purple-800 bg-clip-text text-transparent mb-4">
+                        {t('experience.title')}
+                    </h3>
+                    <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto rounded-full"></div>
                 </div>
-            </section>
-        </div>
+
+                <div className="space-y-8">
+                    {t('experience.items', { returnObjects: true }).map((item) => (
+                        <article
+                            key={item.id}
+                            className="relative bg-white/20 backdrop-blur-lg border border-white/30 rounded-2xl p-8 
+                            shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2
+                            group overflow-hidden"
+                        >
+                            {/* Gradient Overlays */}
+                            <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-purple-500/10 to-pink-500/10 
+                                        opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
+                            <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-br from-blue-400/20 to-purple-400/20 
+                                        rounded-bl-2xl opacity-50"></div>
+                            <div className="absolute bottom-0 left-0 w-12 h-12 bg-gradient-to-tr from-pink-400/20 to-orange-400/20 
+                                        rounded-tr-2xl opacity-50"></div>
+
+                            {/* Header */}
+                            <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-8">
+                                <div className="flex items-center gap-4">
+                                    <div className="p-3 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-xl backdrop-blur-sm">
+                                        <BriefcaseIcon className="w-8 h-8 text-blue-600" />
+                                    </div>
+                                    <div>
+                                        <h3 className="text-2xl font-bold text-gray-800">{item.role}</h3>
+                                        <span className="inline-block mt-2 bg-gradient-to-r from-blue-500/20 to-purple-500/20 
+                                                    text-blue-800 px-3 py-1 rounded-full text-sm font-medium backdrop-blur-sm">
+                                            {item.type}
+                                        </span>
+                                    </div>
+                                </div>
+                                <span className="text-sm font-medium text-gray-600 bg-white/50 px-3 py-1 
+                                                rounded-full backdrop-blur-sm border border-white/30">
+                                    {item.period}
+                                </span>
+                            </div>
+
+                            {/* Description */}
+                            <p className="text-gray-600 leading-relaxed mb-8 text-lg relative z-10">
+                                {item.description}
+                            </p>
+
+                            {/* Skills Grid */}
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 relative z-10">
+                                <SkillCategory
+                                    title={t('experience.skillCategories.development')}
+                                    icon={<CodeBracketIcon className="w-6 h-6 text-blue-600" />}
+                                    skills={item.skills.development}
+                                    color="blue"
+                                />
+
+                                <SkillCategory
+                                    title={t('experience.skillCategories.security')}
+                                    icon={<ShieldCheckIcon className="w-6 h-6 text-green-600" />}
+                                    skills={item.skills.cybersecurity}
+                                    color="green"
+                                />
+
+                                <SkillCategory
+                                    title={t('experience.skillCategories.tools')}
+                                    skills={item.skills.tools}
+                                    color="purple"
+                                />
+                            </div>
+                        </article>
+                    ))}
+                </div>
+            </div>
+        </section>
     );
 }
 

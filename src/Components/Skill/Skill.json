@@ -5,21 +5,21 @@
       "name": "HTML",
       "image": "./images/html5.png",
       "customClass": "",
-      "proficiency": 95
+      "proficiency": 98
     },
     {
       "id": "css",
       "name": "CSS",
       "image": "./images/css3.png",
       "customClass": "",
-      "proficiency": 90
+      "proficiency": 95
     },
     {
-      "id": "tailwind",
-      "name": "Tailwind CSS",
-      "image": "./images/tailwind.png",
-      "customClass": "-ml-2",
-      "proficiency": 88
+      "id": "responsive-design",
+      "name": "Responsive Design",
+      "image": "./images/css3.png",
+      "customClass": "",
+      "proficiency": 95
     },
     {
       "id": "bootstrap",
@@ -29,102 +29,81 @@
       "proficiency": 85
     },
     {
+      "id": "tailwind",
+      "name": "Tailwind",
+      "image": "./images/tailwind.png",
+      "customClass": "",
+      "proficiency": 90
+    },
+    {
+      "id": "radix-ui",
+      "name": "Radix UI",
+      "image": "./images/react.png",
+      "customClass": "",
+      "proficiency": 80
+    },
+    {
+      "id": "typescript",
+      "name": "TypeScript",
+      "image": "./images/js.png",
+      "customClass": "",
+      "proficiency": 88
+    },
+    {
       "id": "javascript",
       "name": "JavaScript",
       "image": "./images/js.png",
       "imageClass": "w-[53px]",
       "customClass": "",
+      "proficiency": 95
+    },
+    {
+      "id": "react",
+      "name": "React.Js",
+      "image": "./images/react.png",
+      "customClass": "",
       "proficiency": 92
+    },
+    {
+      "id": "nextjs",
+      "name": "Next.Js",
+      "image": "./images/react.png",
+      "customClass": "",
+      "proficiency": 85
+    },
+    {
+      "id": "vite",
+      "name": "Vite",
+      "image": "https://vitejs.dev/logo.svg",
+      "customClass": "",
+      "proficiency": 85
     },
     {
       "id": "npm",
       "name": "npm",
       "image": "./images/npm.png",
       "customClass": "",
+      "proficiency": 88
+    },
+    {
+      "id": "pwa-websocket",
+      "name": "PWA / WebSocket",
+      "image": "./images/network_26812.png",
+      "customClass": "",
       "proficiency": 85
-    },
-    {
-      "id": "react",
-      "name": "React",
-      "image": "./images/react.png",
-      "customClass": "",
-      "proficiency": 90
-    },
-    {
-      "id": "panel-dev",
-      "name": "Panel Development",
-      "image": "./images/Web Panel.png",
-      "customClass": "",
-      "proficiency": 75
-    },
-    {
-      "id": "python",
-      "name": "Python",
-      "image": "./images/python.png",
-      "customClass": "",
-      "proficiency": 78
     },
     {
       "id": "git",
-      "name": "Git",
+      "name": "Git & GitHub",
       "image": "./images/git.png",
       "customClass": "",
-      "proficiency": 85
+      "proficiency": 88
     },
     {
       "id": "figma",
       "name": "Figma",
       "image": "./images/figma.png",
       "customClass": "",
-      "proficiency": 70
-    },
-    {
-      "id": "sql-injection",
-      "name": "SQL Injection",
-      "image": "./images/sql.png",
-      "customClass": "",
-      "proficiency": 82
-    },
-    {
-      "id": "malware-dev",
-      "name": "Malware Development",
-      "image": "./images/malware.png",
-      "customClass": "",
-      "proficiency": 75
-    },
-    {
-      "id": "ddos",
-      "name": "DDoS Attacks",
-      "image": "./images/ddos.png",
-      "customClass": "",
-      "proficiency": 80
-    },
-    {
-      "id": "network-plus",
-      "name": "Network+",
-      "image": "./images/network_26812.png",
-      "customClass": "-ml-2",
-      "proficiency": 85
-    },
-    {
-      "id": "vps",
-      "name": "VPS Services",
-      "image": "./images/vps.png",
-      "customClass": "",
-      "proficiency": 90
-    },
-    {
-      "id": "kali",
-      "name": "Kali Linux",
-      "image": "./images/linux.png",
-      "customClass": "",
-      "proficiency": 88
-    },
-    {
-      "id": "tails",
-      "name": "Tails OS 5.0",
-      "image": "./images/boum_tails_logo_icon_169468.png",
-      "customClass": "-ml-2",
       "proficiency": 75
     }
   ]

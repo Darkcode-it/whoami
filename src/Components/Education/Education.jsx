@@ -13,6 +13,10 @@ function EducationTimeline() {
 
     return (
         <section className="relative py-20 px-4 md:px-8" id="education">
+            {/* Animated Gradient Circles */}
+            <div className="absolute top-32 left-12 w-64 h-64 bg-gradient-to-r from-amber-400 to-orange-600 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-pulse"></div>
+            <div className="absolute bottom-32 right-12 w-64 h-64 bg-gradient-to-r from-violet-400 to-purple-600 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-pulse delay-1000"></div>
+            
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-20">
                     <h3 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-gray-900 via-blue-800 to-purple-800 bg-clip-text text-transparent mb-4">

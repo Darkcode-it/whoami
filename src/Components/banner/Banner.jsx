@@ -25,6 +25,10 @@ function Banner() {
         id="home"
         className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
+        {/* Animated Gradient Circles */}
+        <div className="absolute top-10 left-20 w-64 h-64 bg-gradient-to-r from-cyan-400 to-blue-600 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-pulse"></div>
+        <div className="absolute bottom-20 right-20 w-64 h-64 bg-gradient-to-r from-purple-400 to-pink-600 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-pulse delay-1000"></div>
+        
         {/* Lightning overlay only, background remains original */}
         <div className="absolute inset-0 z-0 pointer-events-none">
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full">

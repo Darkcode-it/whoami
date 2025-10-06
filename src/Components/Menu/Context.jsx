@@ -60,6 +60,7 @@ export const ThemeProvider = ({ children }) => {
         document.documentElement.style.setProperty('--primary-color', currentTheme.colors.primary);
         document.documentElement.style.setProperty('--secondary-color', currentTheme.colors.secondary);
         document.documentElement.style.setProperty('--accent-color', currentTheme.colors.accent);
+        document.documentElement.setAttribute('data-theme', currentTheme.name);
     }, [currentTheme]);
 
     const toggleTheme = (themeName) => {

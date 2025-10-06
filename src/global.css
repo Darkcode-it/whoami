@@ -1,12 +1,8 @@
 body {
-    background: linear-gradient(135deg, var(--bg-color) 0%, var(--bg-color-secondary) 100%);
     color: var(--text-color);
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 :root {
@@ -26,6 +22,58 @@ body {
 
 * {
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Dark mode text colors */
+[data-theme="dark"] .text-gray-800,
+[data-theme="dark"] .text-gray-900 {
+    color: rgb(229, 231, 235) !important;
+}
+
+[data-theme="dark"] .text-gray-700 {
+    color: rgb(209, 213, 219) !important;
+}
+
+[data-theme="dark"] .text-gray-600 {
+    color: rgb(156, 163, 175) !important;
+}
+
+[data-theme="dark"] .text-gray-500 {
+    color: rgb(107, 114, 128) !important;
+}
+
+[data-theme="dark"] .text-gray-400 {
+    color: rgb(156, 163, 175) !important;
+}
+
+[data-theme="dark"] .text-gray-300 {
+    color: rgb(209, 213, 219) !important;
+}
+
+/* Dark mode background adjustments */
+[data-theme="dark"] .bg-white\/20 {
+    background-color: rgba(30, 41, 59, 0.4) !important;
+}
+
+[data-theme="dark"] .bg-white\/30 {
+    background-color: rgba(30, 41, 59, 0.5) !important;
+}
+
+[data-theme="dark"] .bg-white\/50 {
+    background-color: rgba(30, 41, 59, 0.6) !important;
+}
+
+[data-theme="dark"] .border-white\/30 {
+    border-color: rgba(71, 85, 105, 0.4) !important;
+}
+
+/* Dark mode card shadows */
+[data-theme="dark"] .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2) !important;
+}
+
+[data-theme="dark"] .shadow-2xl {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5) !important;
 }
 
 /* Theme Switcher Styles */

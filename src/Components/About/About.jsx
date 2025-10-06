@@ -30,6 +30,10 @@ function About() {
 
     return (
         <section className="relative py-20 px-4 md:px-8" id="about">
+            {/* Animated Gradient Circles */}
+            <div className="absolute top-40 left-10 w-64 h-64 bg-gradient-to-r from-green-400 to-emerald-600 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-pulse"></div>
+            <div className="absolute bottom-40 right-10 w-64 h-64 bg-gradient-to-r from-blue-400 to-cyan-600 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-pulse delay-1000"></div>
+            
             <div className="max-w-7xl mx-auto">
                 {/* Header Section */}
                 <div className="text-center mb-20">

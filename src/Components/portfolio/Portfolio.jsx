@@ -16,6 +16,10 @@ const Portfolio = () => {
 
     return (
         <section className="relative py-12 px-4 md:px-8" id="portfolio" data-aos="fade-up">
+            {/* Animated Gradient Circles */}
+            <div className="absolute top-16 left-6 w-64 h-64 bg-gradient-to-r from-sky-400 to-indigo-600 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-pulse"></div>
+            <div className="absolute bottom-16 right-6 w-64 h-64 bg-gradient-to-r from-orange-400 to-amber-600 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-pulse delay-1000"></div>
+            
             <div className="max-w-6xl mx-auto">
                 {/* بخش هدر */}
                 <div className="mb-12 text-center">

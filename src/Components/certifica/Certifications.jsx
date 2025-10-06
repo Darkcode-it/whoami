@@ -4,6 +4,10 @@ import certifications from './certifications.json';
 function Certifications() {
     return (
         <section className="relative py-20 px-4 md:px-8" id="certifications">
+            {/* Animated Gradient Circles */}
+            <div className="absolute top-24 left-8 w-64 h-64 bg-gradient-to-r from-teal-400 to-cyan-600 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-pulse"></div>
+            <div className="absolute bottom-24 right-8 w-64 h-64 bg-gradient-to-r from-fuchsia-400 to-pink-600 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-pulse delay-1000"></div>
+            
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-20">
                     <h3 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-gray-900 via-blue-800 to-purple-800 bg-clip-text text-transparent mb-4">

@@ -20,37 +20,55 @@ import Footer from "./Components/footer/Footer.jsx";
 import PWAInstallPrompt from './components/PWAInstallPrompt';
 import './global.css'
 import {useTranslation} from "react-i18next";
-import { ThemeProvider } from './Components/Menu/Context';
+import { ThemeProvider, useTheme } from './Components/Menu/Context';
 
-export default function App() {
+function AppContent() {
     const {t} = useTranslation();
+    const { currentTheme } = useTheme();
+    const isDark = currentTheme.name === 'dark';
 
     return (
-        <ThemeProvider>
-            <div className="min-h-screen bg-theme relative overflow-hidden">
-                {/* Overlay Gradient */}
-                <div className="absolute inset-0 bg-gradient-theme opacity-5"></div>
+        <div className={`min-h-screen relative overflow-hidden transition-colors duration-300 ${
+            isDark 
+                ? 'bg-gradient-to-br from-gray-900 via-slate-900 to-gray-800' 
+                : 'bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100'
+        }`}>
+            {/* Overlay Gradient */}
+            <div className={`absolute inset-0 ${
+                isDark
+                    ? 'bg-gradient-to-br from-blue-900/10 via-purple-900/10 to-pink-900/10'
+                    : 'bg-gradient-to-br from-blue-400/5 via-purple-400/5 to-pink-400/5'
+            }`}></div>
 
-                {/* Animated Gradient Circles */}
-                <div className="absolute top-20 left-10 w-72 h-72 bg-gradient-theme rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-pulse"></div>
-                <div className="absolute top-40 right-10 w-72 h-72 bg-gradient-theme rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-pulse delay-1000"></div>
-                <div className="absolute bottom-20 left-1/2 w-72 h-72 bg-gradient-theme rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-pulse delay-2000"></div>
+            {/* Animated Gradient Circles */}
+            <div className={`absolute bottom-20 left-1/2 w-72 h-72 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-pulse delay-2000 ${
+                isDark
+                    ? 'bg-gradient-to-r from-pink-600 to-orange-600'
+                    : 'bg-gradient-to-r from-pink-400 to-orange-400'
+            }`}></div>
 
-                {/* Main Content */}
-                <div className="relative">
-                    <Menu/>
-                    <Banner/>
-                    <About/>
-                    <Experience/>
-                    <Education/>
-                    <Certifications/>
-                    <Skills/>
-                    <Portfolio/>
-                    <Services/>
-                    <Footer/>
-                    <PWAInstallPrompt />
-                </div>
+            {/* Main Content */}
+            <div className="relative">
+                <Menu/>
+                <Banner/>
+                <About/>
+                <Experience/>
+                <Education/>
+                <Certifications/>
+                <Skills/>
+                <Portfolio/>
+                <Services/>
+                <Footer/>
+                <PWAInstallPrompt />
             </div>
+        </div>
+    );
+}
+
+export default function App() {
+    return (
+        <ThemeProvider>
+            <AppContent />
         </ThemeProvider>
     )
 }

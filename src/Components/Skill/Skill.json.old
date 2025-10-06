@@ -1,0 +1,132 @@
+{
+  "comment": "OLD SKILLS DATA - COMMENTED OUT BUT PRESERVED",
+  "skills": [
+    {
+      "id": "html",
+      "name": "HTML",
+      "image": "./images/html5.png",
+      "customClass": "",
+      "proficiency": 95
+    },
+    {
+      "id": "css",
+      "name": "CSS",
+      "image": "./images/css3.png",
+      "customClass": "",
+      "proficiency": 90
+    },
+    {
+      "id": "tailwind",
+      "name": "Tailwind CSS",
+      "image": "./images/tailwind.png",
+      "customClass": "-ml-2",
+      "proficiency": 88
+    },
+    {
+      "id": "bootstrap",
+      "name": "Bootstrap",
+      "image": "./images/bootstrap.png",
+      "customClass": "",
+      "proficiency": 85
+    },
+    {
+      "id": "javascript",
+      "name": "JavaScript",
+      "image": "./images/js.png",
+      "imageClass": "w-[53px]",
+      "customClass": "",
+      "proficiency": 92
+    },
+    {
+      "id": "npm",
+      "name": "npm",
+      "image": "./images/npm.png",
+      "customClass": "",
+      "proficiency": 85
+    },
+    {
+      "id": "react",
+      "name": "React",
+      "image": "./images/react.png",
+      "customClass": "",
+      "proficiency": 90
+    },
+    {
+      "id": "panel-dev",
+      "name": "Panel Development",
+      "image": "./images/Web Panel.png",
+      "customClass": "",
+      "proficiency": 75
+    },
+    {
+      "id": "python",
+      "name": "Python",
+      "image": "./images/python.png",
+      "customClass": "",
+      "proficiency": 78
+    },
+    {
+      "id": "git",
+      "name": "Git",
+      "image": "./images/git.png",
+      "customClass": "",
+      "proficiency": 85
+    },
+    {
+      "id": "figma",
+      "name": "Figma",
+      "image": "./images/figma.png",
+      "customClass": "",
+      "proficiency": 70
+    },
+    {
+      "id": "sql-injection",
+      "name": "SQL Injection",
+      "image": "./images/sql.png",
+      "customClass": "",
+      "proficiency": 82
+    },
+    {
+      "id": "malware-dev",
+      "name": "Malware Development",
+      "image": "./images/malware.png",
+      "customClass": "",
+      "proficiency": 75
+    },
+    {
+      "id": "ddos",
+      "name": "DDoS Attacks",
+      "image": "./images/ddos.png",
+      "customClass": "",
+      "proficiency": 80
+    },
+    {
+      "id": "network-plus",
+      "name": "Network+",
+      "image": "./images/network_26812.png",
+      "customClass": "-ml-2",
+      "proficiency": 85
+    },
+    {
+      "id": "vps",
+      "name": "VPS Services",
+      "image": "./images/vps.png",
+      "customClass": "",
+      "proficiency": 90
+    },
+    {
+      "id": "kali",
+      "name": "Kali Linux",
+      "image": "./images/linux.png",
+      "customClass": "",
+      "proficiency": 88
+    },
+    {
+      "id": "tails",
+      "name": "Tails OS 5.0",
+      "image": "./images/boum_tails_logo_icon_169468.png",
+      "customClass": "-ml-2",
+      "proficiency": 75
+    }
+  ]
+}

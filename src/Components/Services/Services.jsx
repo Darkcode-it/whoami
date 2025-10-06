@@ -19,6 +19,10 @@ function Services() {
             id="services"
             data-aos="fade-up"
         >
+            {/* Animated Gradient Circles */}
+            <div className="absolute top-36 left-10 w-64 h-64 bg-gradient-to-r from-emerald-400 to-teal-600 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-pulse"></div>
+            <div className="absolute bottom-36 right-10 w-64 h-64 bg-gradient-to-r from-purple-400 to-indigo-600 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-pulse delay-1000"></div>
+            
             <div className="max-w-7xl mx-auto">
                 {/* Header Section */}
                 <div className="text-center mb-16">

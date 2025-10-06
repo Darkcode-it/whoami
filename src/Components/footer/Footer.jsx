@@ -46,6 +46,10 @@ const footerData = {
 function Footer() {
     return (
         <footer className=" text-gray-300 py-12 relative overflow-hidden">
+            {/* Animated Gradient Circles */}
+            <div className="absolute top-0 left-20 w-48 h-48 bg-gradient-to-r from-slate-400 to-gray-600 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-pulse"></div>
+            <div className="absolute bottom-0 right-20 w-48 h-48 bg-gradient-to-r from-blue-400 to-purple-600 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-pulse delay-1000"></div>
+            
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col items-center">
 
