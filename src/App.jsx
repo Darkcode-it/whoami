@@ -17,7 +17,7 @@ import Skills from "./Components/Skill/Skill.jsx";
 import Portfolio from "./Components/portfolio/Portfolio.jsx";
 import Services from "./Components/Services/Services.jsx";
 import Footer from "./Components/footer/Footer.jsx";
-import PWAInstallPrompt from './components/PWAInstallPrompt';
+import PWAInstallPrompt from './Components/PWAInstallPrompt.jsx';
 import './global.css'
 import {useTranslation} from "react-i18next";
 import { ThemeProvider, useTheme } from './Components/Menu/Context';

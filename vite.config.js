@@ -75,7 +75,7 @@ export default defineConfig({
       }
     })
   ],
-  base: '/whoami/',
+  base: process.env.VERCEL ? '/' : '/whoami/',
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
