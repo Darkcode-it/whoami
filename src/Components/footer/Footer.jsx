@@ -23,23 +23,15 @@ const footerData = {
             icon: <FaTelegram className="w-5 h-5" />,
             ariaLabel: "Contact via Telegram"
         },
-        {
-            name: "Website",
-            url: "https://ahmad-rasouli-sgd5qfa.gamma.site/",
-            icon: <FaGlobe className="w-5 h-5" />,
-            ariaLabel: "Visit personal website"
-        }
+      
     ],
     copyright: {
-        text: "© 2025 Ahmad Rasouli. All rights reserved.",
+        text: "The project is completely open source, but to support me, please fork and star me before cloning..",
         author: {
             name: "Ahmad Rasouli",
             email: "darkcodeit@protonmail.com"
         },
-        credits: {
-            text: "Initial Design by ",
-            email: "siavash.sattari.dev@gmail.com"
-        }
+       
     }
 };
 
@@ -85,16 +77,8 @@ function Footer() {
                                 {footerData.copyright.author.name}
                             </a>
                         </p>
-                        <div className="hidden md:block">•</div>
-                        <p>
-                            {footerData.copyright.credits.text}{" "}
-                            <a
-                                href={`mailto:${footerData.copyright.credits.email}`}
-                                className="text-blue-400 hover:text-blue-300 transition-colors"
-                            >
-                                {footerData.copyright.credits.email.split('@')[0]}
-                            </a>
-                        </p>
+                  
+                     
                     </div>
                 </div>
             </div>
