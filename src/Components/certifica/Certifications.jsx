@@ -1,5 +1,5 @@
 import React from 'react';
-import certifications from './Certifications.json';Fix problem for Vircel server
+import certifications from './Certifications.json'; // Fix problem for Vercel server
 
 function Certifications() {
     return (
@@ -22,7 +22,7 @@ function Certifications() {
                             key={certification.id}
                             className="relative bg-white/20 backdrop-blur-lg border border-white/30 rounded-2xl p-6 
                             shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 group overflow-hidden"
-                        >
+                        >Fix problem for Vircel server
                             <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-purple-500/10 to-pink-500/10 
                                         opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
                             <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-br from-blue-400/20 to-purple-400/20 
