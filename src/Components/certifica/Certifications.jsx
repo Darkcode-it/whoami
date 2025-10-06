@@ -1,5 +1,5 @@
 import React from 'react';
-import certifications from './certifications.json';
+import certifications from './Certifications.json';Fix problem for Vircel server
 
 function Certifications() {
     return (
