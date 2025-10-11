@@ -5,7 +5,7 @@ import { CiWarning } from "react-icons/ci";
 import { useTranslation } from 'react-i18next';
 
 const Portfolio = () => {
-    const { i18n } = useTranslation();
+    const { t, i18n } = useTranslation();
 
     const addImageFallback = (event) => {
         event.currentTarget.src = 'https://via.placeholder.com/400x200?text=Image+Not+Found';
@@ -22,12 +22,11 @@ const Portfolio = () => {
             
             <div className="max-w-6xl mx-auto">
                 {/* بخش هدر */}
-                <div className="mb-12 text-center">
-                    <h3 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-gray-900 via-blue-800 to-purple-800 bg-clip-text text-transparent mb-3">
-                        Portfolio
+                <div className="mb-12 text-center">                    <h3 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-gray-900 via-blue-800 to-purple-800 bg-clip-text text-transparent mb-3">
+                        {t('portfolio.title')}
                     </h3>
                     <p className="max-w-2xl mx-auto text-gray-600 mt-4">
-                        The projects may not be perfect from your point of view, but I make them more perfect every day
+                        {t('portfolio.description')}
                     </p>
                     <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto rounded-full mt-4"></div>
                 </div>
@@ -51,7 +50,7 @@ const Portfolio = () => {
                         className="inline-block bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white
                         px-8 py-3 rounded-lg transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
                     >
-                        View all projects
+                        {t('portfolio.viewAll')}
                     </a>
                 </div>
             </div>
@@ -61,6 +60,7 @@ const Portfolio = () => {
 
 // کامپوننت کارت پروژه
 const ProjectCard = ({ project, onError, index }) => {
+    const { t } = useTranslation();
     return (
         <div
             className="group relative h-[400px]"
@@ -108,7 +108,7 @@ const ProjectCard = ({ project, onError, index }) => {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                View Source
+                                {t('portfolio.viewSource')}
                                 <CiWarning className="w-5 h-5 mr-1" />
                             </a>
                         </div>

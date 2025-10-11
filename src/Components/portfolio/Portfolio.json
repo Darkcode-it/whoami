@@ -6,8 +6,37 @@
       "image": "./images/is.png",
       "link": "https://darkcode-it.github.io/whoami/",
       "repo": "https://github.com/Darkcode-it/whoami",
-      "tags": ["React", "Tailwind", "Vit"],
+      "tags": [
+        "React",
+        "Tailwind",
+        "Vit"
+      ],
       "description": ""
+    },
+    {
+      "id": "sipad",
+      "title": "SIPAD",
+      "image": "./images/SIPAD.png",
+      "link": "https://sipad.vercel.app/",
+      "repo": ".",
+      "tags": [
+        "Web App",
+        "Vercel"
+      ],
+      "description": "SIPAD project hosted on Vercel platform"
+    },
+    {
+      "id": "datagred",
+      "title": "DATAGRED",
+      "image": "./images/DATAGRED.png",
+      "link": "https://datagrid-nine.vercel.app/",
+      "repo": "https://github.com/Darkcode-it/datagrid",
+      "tags": [
+        "Web App",
+        "Vercel",
+        "Data Grid"
+      ],
+      "description": "DATAGRED project - A data grid application hosted on Vercel"
     },
     {
       "id": "net4all",
@@ -17,7 +46,6 @@
       "repo": "https://github.com/Darkcode-it/net4all",
       "tags": [],
       "description": "A type of DDOS that changes the port and IP with each operation. With this tool you can eliminate bad Telegram channels."
-      
     },
     {
       "id": "movie-app",
@@ -25,7 +53,11 @@
       "image": "./images/fourth.png",
       "link": "https://darkcode-it.github.io/Movie/",
       "repo": "https://github.com/Darkcode-it/Movie",
-      "tags": ["React", "Tailwind", "Vit"],
+      "tags": [
+        "React",
+        "Tailwind",
+        "Vit"
+      ],
       "description": ""
     },
     {
@@ -37,15 +69,7 @@
       "tags": [],
       "description": ""
     },
-    {
-      "id": "khano-app",
-      "title": "Khano App",
-      "image": "./images/khanoo.png",
-      "link": "https://darkcode-it.github.io/Khano-app/",
-      "repo": "https://github.com/Darkcode-it/Khano-app",
-      "tags": ["React", "Tailwind", "Vit"],
-      "description": ""
-    },
+  
     {
       "id": "my-project",
       "title": "My Project",
@@ -61,7 +85,11 @@
       "image": "./images/todo.png",
       "link": "https://preview--persia-todo-task.lovable.app/",
       "repo": "https://github.com/Darkcode-it/persia-todo-task",
-      "tags": ["React", "Tailwind", "Vit"],
+      "tags": [
+        "React",
+        "Tailwind",
+        "Vit"
+      ],
       "description": ""
     }
   ]
