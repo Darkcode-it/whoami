@@ -5,7 +5,8 @@ import {
     FaGithub, 
     FaTelegram, 
     FaAngleDown,
-    FaGlobe
+    FaGlobe,
+    FaInstagram
 } from 'react-icons/fa';
 
 import data from './Banner.json';
@@ -14,7 +15,8 @@ import Lightning from './Lightning.jsx';
 const iconComponents = {
     FaGithub: FaGithub, 
     FaTelegram: FaTelegram,
-    FaGlobe: FaGlobe
+    FaGlobe: FaGlobe,
+    FaInstagram: FaInstagram
 };
 
 function Banner() {

@@ -10,9 +10,14 @@
       "icon": "FaGithub"
     },
     {
-      "name": "Telegram",
-      "url": "https://t.me/Darkcodeit",
-      "icon": "FaTelegram"
+        "name": "Telegram",
+        "url": "https://t.me/Darkcodeit",
+        "icon": "FaTelegram"
+    },
+    {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/darkcodeit?igsh=ZmE1cjNnbGp4aGMy",
+        "icon": "FaInstagram"
     }
    
   ]

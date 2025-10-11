@@ -6,7 +6,7 @@ import {
     FaFacebook,
     FaLinkedin,
     FaCodepen,
-    FaGlobe
+    FaInstagram
 } from 'react-icons/fa';
 
 const footerData = {
@@ -23,7 +23,12 @@ const footerData = {
             icon: <FaTelegram className="w-5 h-5" />,
             ariaLabel: "Contact via Telegram"
         },
-      
+        {
+            name: "Instagram",
+            url: "https://www.instagram.com/darkcodeit/",
+            icon: <FaInstagram className="w-5 h-5" />,
+            ariaLabel: "Visit Instagram profile"
+        },
     ],
     copyright: {
         text: "The project is completely open source, but to support me, please fork and star me before cloning..",
@@ -53,7 +58,7 @@ function Footer() {
                                 href={link.url}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-gray-300 hover:text-white transition-all duration-300 group"
+                                className="text-gray-600 hover:text-blue-400 transition-colors duration-300"
                                 aria-label={link.ariaLabel}
                             >
                                 <span className="sr-only">{link.name}</span>
