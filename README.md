@@ -473,19 +473,19 @@ furnished to do so, subject to the following conditions:
 
 **احمد رسولی** - توسعه‌دهنده فرانت‌اند و متخصص امنیت سایبری
 
-- 🌐 **وبسایت**: [darkcode-it.github.io](https://darkcode-it.github.io)
+- 🌐 **وبسایت**: [darkcode-it.github.io](https://www.darkcodeit.info/)
 - 🐙 **GitHub**: [github.com/Darkcode-it](https://github.com/Darkcode-it)
-- 💼 **LinkedIn**: [linkedin.com/in/ahmad-rasouli](https://linkedin.com/in/ahmad-rasouli)
-- 📧 **ایمیل**: ahmad@example.com
+<!-- - 💼 **LinkedIn**: [linkedin.com/in/ahmad-rasouli](https://linkedin.com/in/ahmad-rasouli) -->
+- 📧 **ایمیل**: Ahmadrasouli.dev@gmail.com
 
 </div>
 
 **Ahmad Rasouli** - Front-End Developer & Cybersecurity Specialist
 
-- 🌐 **Website**: [darkcode-it.github.io](https://darkcode-it.github.io)
+- 🌐 **Website**: [darkcode-it.github.io](https://www.darkcodeit.info/)
 - 🐙 **GitHub**: [github.com/Darkcode-it](https://github.com/Darkcode-it)
-- 💼 **LinkedIn**: [linkedin.com/in/ahmad-rasouli](https://linkedin.com/in/ahmad-rasouli)
-- 📧 **Email**: ahmad@example.com
+<!-- - 💼 **LinkedIn**: [linkedin.com/in/ahmad-rasouli](https://linkedin.com/in/ahmad-rasouli) -->
+- 📧 **Email**: Ahmadrasouli.dev@gmail.com
 
 ---
 
@@ -495,7 +495,7 @@ furnished to do so, subject to the following conditions:
 
 با سلام خدمت مهندس و همکار گرامی،
 
-لطفاً وقتی از پروژه‌های اپن سورس من استفاده می‌کنید یا از من در پروژه خود یاد می‌کنید، آدرس گیت‌هاب من را در هر قسمتی که تمایل داشتید قرار دهید.
+لطفاً وقتی از پروژه‌های اپن سورس من استفاده می‌کنید یک ستار و یک فورک بهم بدین یا از من در پروژه خود یاد کنید، آدرس گیت‌هاب من را در هر قسمتی که تمایل داشتید قرار دهید.
 
 با تشکر، موفق باشید! 🌟
 
@@ -519,6 +519,6 @@ Thank you and good luck! 🌟
 
 ⭐ اگر این پروژه برای شما مفید بود، لطفاً آن را ستاره‌دار کنید!
 
-**[🔗 مشاهده پروژه روی GitHub](https://github.com/Darkcode-it/whoami)** | **[🚀 نسخه آنلاین](https://darkcode-it.github.io/whoami/)**
+**[🔗 مشاهده پروژه روی GitHub](https://www.darkcodeit.info/)** | **[🚀 نسخه آنلاین](https://www.darkcodeit.info/)**
 
 </div>
