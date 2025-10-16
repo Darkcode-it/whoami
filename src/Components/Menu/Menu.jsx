@@ -76,10 +76,10 @@ const Menu = ({ menuItems = [] }) => {
     const defaultItems = [
         { key: 'home', label: t('menu.home') },
         { key: 'about', label: t('menu.about') },
-        { key: 'experience', label: t('menu.experience') },
+        { key: 'skills', label: t('menu.skills') },
         { key: 'education', label: t('menu.education') },
         { key: 'certifications', label: t('menu.certifications') },
-        { key: 'skills', label: t('menu.skills') },
+     
         { key: 'portfolio', label: t('menu.portfolio') },
         { key: 'services', label: t('menu.services') }
     ];

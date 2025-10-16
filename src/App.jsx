@@ -11,7 +11,6 @@ import Menu from "./Components/Menu/Menu.jsx";
 import Banner from "./Components/banner/Banner.jsx";
 import About from "./Components/About/About.jsx";
 import Education from "./Components/Education/Education.jsx";
-import Experience from "./Components/Experience/Experience.jsx";
 import Certifications from "./Components/certifica/Certifications.jsx";
 import Skills from "./Components/Skill/Skill.jsx";
 import Portfolio from "./Components/portfolio/Portfolio.jsx";
@@ -52,10 +51,9 @@ function AppContent() {
                 <Menu/>
                 <Banner/>
                 <About/>
-                <Experience/>
+                <Skills/>
                 <Education/>
                 <Certifications/>
-                <Skills/>
                 <Portfolio/>
                 <Services/>
                 <Footer/>

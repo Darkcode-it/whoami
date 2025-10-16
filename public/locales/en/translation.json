@@ -3,7 +3,6 @@
   "menu": {
     "home": "Home",
     "about": "About",
-    "experience": "Experience",
     "education": "Education",
     "certifications": "Certifications",
     "skills": "Skills",
@@ -24,50 +23,6 @@
       "url": "./resume/AhmadRasouli.pdf",
       "label": "Download Professional Profile"
     }
-  },
-  "experience": {
-    "title": "Professional Journey",
-    "subtitle": "Bridging development expertise with security-first approach",
-    "skillCategories": {
-      "development": "Development Expertise",
-      "security": "Security Specialization",
-      "tools": "Tools & Platforms"
-    },
-    "items": [
-      {
-        "id": 1,
-        "role": "Front-End Developer & Cybersecurity Specialist",
-        "type": "Self-Initiated Projects",
-        "period": "March - April 2025",
-        "description": "Combining web development expertise with cybersecurity research to create secure and modern web solutions",
-        "skills": {
-          "development": [
-            "React Architecture",
-            "Tailwind CSS",
-            "Responsive Design",
-            "Web Performance",
-            "REST APIs",
-            "Webpack"
-          ],
-          "cybersecurity": [
-            "Penetration Testing",
-            "Threat Analysis",
-            "OWASP Top 10",
-            "Network Security",
-            "Cryptography",
-            "SIEM Tools"
-          ],
-          "tools": [
-            "Kali Linux",
-            "Burp Suite",
-            "Wireshark",
-            "Metasploit",
-            "Nmap",
-            "Docker"
-          ]
-        }
-      }
-    ]
   },
   "education": {
     "title": "Academic Journey",
