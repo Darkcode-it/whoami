@@ -36,26 +36,41 @@
       "proficiency": 90
     },
     {
-      "id": "radix-ui",
-      "name": "Radix UI",
-      "image": "./images/react.png",
-      "customClass": "",
-      "proficiency": 80
-    },
-    {
-      "id": "typescript",
-      "name": "TypeScript",
-      "image": "./images/js.png",
-      "customClass": "",
-      "proficiency": 88
-    },
-    {
       "id": "javascript",
       "name": "JavaScript",
       "image": "./images/js.png",
       "imageClass": "w-[53px]",
       "customClass": "",
       "proficiency": 95
+    },
+    {
+      "id": "typescript",
+      "name": "TypeScript",
+      "image": "./images/typescript.png",
+      "customClass": "",
+      "proficiency": 88
+    },
+    {
+      "id": "python",
+      "name": "Python",
+      "image": "./images/python.png",
+      "customClass": "",
+      "proficiency": 80
+    },
+    {
+      "id": "radix-ui",
+      "name": "Radix UI",
+      "image": "./images/RadixUI.png",
+      "customClass": "",
+      "proficiency": 80
+    },
+  
+    {
+      "id": "MaterialUi",
+      "name": "Material UI",
+      "image": "./images/MaterialUi.png",
+      "customClass": "",
+      "proficiency": 80
     },
     {
       "id": "react",
@@ -67,7 +82,7 @@
     {
       "id": "nextjs",
       "name": "Next.Js",
-      "image": "./images/react.png",
+      "image": "./images/Next.js.webp",
       "customClass": "",
       "proficiency": 85
     },
@@ -88,7 +103,7 @@
     {
       "id": "pwa-websocket",
       "name": "PWA / WebSocket",
-      "image": "./images/network_26812.png",
+      "image": "./images/WebPanel.png",
       "customClass": "",
       "proficiency": 85
     },
