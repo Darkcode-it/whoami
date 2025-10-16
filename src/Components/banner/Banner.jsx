@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-
+import { useTranslation } from 'react-i18next';
 import {
     FaGithub, 
     FaTelegram, 
@@ -21,7 +21,10 @@ const iconComponents = {
 
 function Banner() {
     const [hue, setHue] = useState(220);
-    const {name, jobTitle, profileImage, socialLinks} = data;
+    const { t } = useTranslation();
+    const {profileImage, socialLinks} = data;
+    const name = t('banner.name');
+    const jobTitle = t('banner.jobTitle');
 
     return (<section
         id="home"
@@ -56,7 +59,7 @@ function Banner() {
 
                 {/* متن اصلی */}
                 <div className="space-y-6" data-aos="fade-up" data-aos-duration="1000">
-                    <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-400
+                    <h1 className="text-5xl pb-2 md:text-6xl font-bold bg-gradient-to-r from-blue-400
                     to-cyan-400 bg-clip-text text-transparent">
                         {name}
                     </h1>

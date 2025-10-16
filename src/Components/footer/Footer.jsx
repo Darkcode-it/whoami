@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { useTranslation } from 'react-i18next';
 import {
     FaGithub,
     FaTelegram,
@@ -31,22 +32,21 @@ const footerData = {
         },
     ],
     copyright: {
-        text: "The project is completely open source, but to support me, please fork and star me before cloning..",
+        text: "footer.openSourceText",
         author: {
-            name: "Ahmad Rasouli",
+            name: "name",
             email: "darkcodeit@protonmail.com"
         },
-       
+
     }
 };
 
 function Footer() {
+    const { t } = useTranslation();
+
     return (
         <footer className=" text-gray-300 py-12 relative overflow-hidden">
             {/* Animated Gradient Circles */}
-            <div className="absolute top-0 left-20 w-48 h-48 bg-gradient-to-r from-slate-400 to-gray-600 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-pulse"></div>
-            <div className="absolute bottom-0 right-20 w-48 h-48 bg-gradient-to-r from-blue-400 to-purple-600 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-pulse delay-1000"></div>
-            
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col items-center">
 
@@ -71,15 +71,15 @@ function Footer() {
 
                     {/* Copyright Text */}
                     <div className="flex flex-col md:flex-row items-center text-center text-gray-400 text-sm space-y-2 md:space-y-0 md:space-x-4">
-                        <p>{footerData.copyright.text}</p>
+                        <p>{t(footerData.copyright.text)}</p>
                         <div className="hidden md:block">•</div>
                         <p>
-                            Developed by{" "}
+                            {t('footer.developedBy')}{" "}
                             <a
                                 href={`mailto:${footerData.copyright.author.email}`}
                                 className="text-blue-400 hover:text-blue-300 transition-colors"
                             >
-                                {footerData.copyright.author.name}
+                                {t(footerData.copyright.author.name)}
                             </a>
                         </p>
                   

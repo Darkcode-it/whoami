@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import skillsData from './Skill.json';
 
 function Skills() {
+    const { t } = useTranslation();
     const [skills, setSkills] = useState([]);
 
     useEffect(() => {
@@ -32,10 +34,10 @@ function Skills() {
             <div className="max-w-6xl mx-auto">
                 <div className="text-center mb-16">
                     <h3 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-gray-900 via-blue-800 to-purple-800 bg-clip-text text-transparent mb-3">
-                        Skills & Expertise
+                        {t('skills.title')}
                     </h3>
                     <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto rounded-full"></div>
-                    <p className="text-gray-600 mt-6 text-sm">Professional expertise and technical proficiency</p>
+                    <p className="text-gray-600 mt-6 text-sm">{t('skills.subtitle')}</p>
                 </div>
 
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 gap-4">

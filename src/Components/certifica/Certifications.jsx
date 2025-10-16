@@ -1,7 +1,9 @@
 import React from 'react';
 import certifications from './Certifications.json'; // Fix problem for Vercel server
+import { useTranslation } from 'react-i18next';
 
 function Certifications() {
+    const { t } = useTranslation();
     return (
         <section className="relative py-20 px-4 md:px-8" id="certifications">
             {/* Animated Gradient Circles */}
@@ -10,24 +12,24 @@ function Certifications() {
             
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-20">
-                    <h3 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-gray-900 via-blue-800 to-purple-800 bg-clip-text text-transparent mb-4">
-                        Certifications
+                    <h3 className="text-5xl pt-2 md:text-6xl font-bold bg-gradient-to-r from-gray-900 via-blue-800 to-purple-800 bg-clip-text text-transparent mb-4">
+                        {t('certifications.title')}
                     </h3>
                     <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto rounded-full"></div>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {certifications.map((certification) => (
+                    {certifications.map((certification, index) => (
                         <div
-                            key={certification.id}
-                            className="relative bg-white/20 backdrop-blur-lg border border-white/30 rounded-2xl p-6 
+                            key={certification.id || index}
+                            className="relative bg-white/20 backdrop-blur-lg border border-white/30 rounded-2xl p-6
                             shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 group overflow-hidden"
-                        >Fix problem for Vircel server
-                            <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-purple-500/10 to-pink-500/10 
+                        >
+                            <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-purple-500/10 to-pink-500/10
                                         opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
-                            <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-br from-blue-400/20 to-purple-400/20 
+                            <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-br from-blue-400/20 to-purple-400/20
                                         rounded-bl-2xl opacity-50"></div>
-                            <div className="absolute bottom-0 left-0 w-12 h-12 bg-gradient-to-tr from-pink-400/20 to-orange-400/20 
+                            <div className="absolute bottom-0 left-0 w-12 h-12 bg-gradient-to-tr from-pink-400/20 to-orange-400/20
                                         rounded-tr-2xl opacity-50"></div>
 
                             <a
@@ -42,14 +44,14 @@ function Certifications() {
                                     className="w-full h-48 object-contain rounded-xl border-2 border-white/30 bg-white/10 backdrop-blur-sm"
                                 />
                             </a>
-                            
+
                             <div className="space-y-3 relative z-10">
                                 <h4 className="text-xl font-semibold text-gray-800 group-hover:text-gray-900 transition-colors">
                                     {certification.title}
                                 </h4>
                                 <p className="text-sm font-medium text-gray-900">{certification.issuer}</p>
                                 <p className="text-sm text-gray-500 bg-white/50 backdrop-blur-sm px-3 py-1 rounded-full inline-block">
-                                    Issued {certification.issuedDate}
+                                    {certification.issuedDate}
                                 </p>
                             </div>
                         </div>

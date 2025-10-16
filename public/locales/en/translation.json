@@ -9,6 +9,10 @@
     "portfolio": "Portfolio",
     "services": "Services"
   },
+  "banner": {
+    "name": "Ahmad Rasouli",
+    "jobTitle": "Front-End Developer"
+  },
   "name": "Ahmad Rasouli",
   "jobTitle": "Front-End Developer & Cybersecurity Specialist",
   "about": {
@@ -286,6 +290,12 @@
   },
   "footer": {
     "rights": "All rights reserved",
-    "contact": "Contact"
+    "contact": "Contact",
+    "developedBy": "Developed by",
+    "openSourceText": "The project is completely open source, but to support me, please fork and star me before cloning.."
+  },
+  "skills": {
+    "title": "Skills & Expertise",
+    "subtitle": "Professional expertise and technical proficiency"
   }
 }
