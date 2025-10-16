@@ -7,8 +7,8 @@ html {
 /* Import Comfortaa font */
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Inconsolata:wght@200..900&display=swap');
 
-/* Import Lalezar font */
-@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+/* Import Tanha font */
+@import url('https://fonts.googleapis.com/css2?family=Tanha&display=swap');
 
 /* Default font for English */
 body {
@@ -16,10 +16,10 @@ body {
     font-optical-sizing: auto;
 }
 @font-face {
-    font-family: 'Lalezar';
+    font-family: 'Tanha';
     font-style: normal;
     font-weight: normal;
-    src: local('Lalezar'), url('./assets/fonts/Lalezar-Regular.ttf') format('truetype');
+    src: local('Tanha'), url('./assets/fonts/Tanha.ttf') format('truetype');
   }
 
 @font-face {
@@ -31,7 +31,7 @@ body {
 
 /* Font for Persian language - with lighter weight */
 html[lang="fa"] body {
-    font-family: "Lalezar", "Comfortaa", sans-serif;
+    font-family: "Tanha", "Comfortaa", sans-serif;
     font-weight: 300;  /* Lighter font weight */
     letter-spacing: -0.5px;  /* Slightly reduce spacing between letters */
 }
