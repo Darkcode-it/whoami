@@ -63,12 +63,12 @@ const ProjectCard = ({ project, onError, index }) => {
     const { t } = useTranslation();
     return (
         <div
-            className="group relative h-[400px]"
+            className="group relative h-[310px]"
             style={{
                 animationDelay: `${index * 100}ms` // تأخیر انیمیشن برای هر کارت
             }}
         >
-            <div className="relative bg-white/20 backdrop-blur-lg border border-white/30 rounded-xl p-5 
+            <div className="relative bg-white/20 backdrop-blur-lg border border-white/30 rounded-xl p-2 
                           shadow-md hover:shadow-xl transition-all duration-500 
                           hover:-translate-y-2 hover:bg-white/30 overflow-hidden h-full">
                 {/* افکت گرادیان هنگام هاور */}
@@ -86,9 +86,9 @@ const ProjectCard = ({ project, onError, index }) => {
                         />
                     </a>
 
-                    <div className="p-4 text-center flex-grow flex flex-col justify-between">
+                    <div className="p-2 text-center flex-grow flex flex-col justify-start">
                         <div>
-                            <h5 className="text-xl font-bold text-gray-800 group-hover:text-gray-900 transition-colors duration-300 mb-2">
+                            <h5 className="text-xl font-bold text-gray-800 group-hover:text-gray-900 transition-colors duration-300">
                                 {project.title}
                             </h5>
 
