@@ -4,15 +4,15 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Import Roboto font */
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* Import Comfortaa font */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Inconsolata:wght@200..900&display=swap');
 
 /* Import Lalezar font */
 @import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
 
 /* Default font for English */
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: "Comfortaa", sans-serif;
     font-optical-sizing: auto;
 }
 @font-face {
@@ -22,9 +22,16 @@ body {
     src: local('Lalezar'), url('./assets/fonts/Lalezar-Regular.ttf') format('truetype');
   }
 
+@font-face {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Comfortaa'), url('./assets/fonts/Comfortaa.ttf') format('truetype');
+  }
+
 /* Font for Persian language - with lighter weight */
 html[lang="fa"] body {
-    font-family: "Lalezar", "Roboto", sans-serif;
+    font-family: "Lalezar", "Comfortaa", sans-serif;
     font-weight: 300;  /* Lighter font weight */
     letter-spacing: -0.5px;  /* Slightly reduce spacing between letters */
 }
