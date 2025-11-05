@@ -26,6 +26,19 @@
       "description": "SIPAD project hosted on Vercel platform"
     },
     {
+      "id": "oda original",
+      "title": "oda original",
+      "image": "./images/oda.png",
+      "link": "https://odaoriginal.com/",
+      "repo": "https://odaoriginal.com/",
+      "tags": [
+        "Web App",
+        "Vercel",
+        "Data Grid"
+      ],
+      "description": "DATAGRED project - A data grid application hosted on Vercel"
+    },
+    {
       "id": "datagred",
       "title": "DATAGRED",
       "image": "./images/DATAGRED.png",
@@ -38,15 +51,7 @@
       ],
       "description": "DATAGRED project - A data grid application hosted on Vercel"
     },
-    {
-      "id": "net4all",
-      "title": "net4all",
-      "image": "./images/net4all.png",
-      "link": "https://darkcode-it.github.io/net4all/",
-      "repo": "https://github.com/Darkcode-it/net4all",
-      "tags": [],
-      "description": "A type of DDOS that changes the port and IP with each operation. With this tool you can eliminate bad Telegram channels."
-    },
+
     {
       "id": "movie-app",
       "title": "Movie App",
