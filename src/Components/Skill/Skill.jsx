@@ -99,7 +99,7 @@ function Skills() {
                                             ></div>
                                         </div>
 
-                                        <div className="flex justify-center items-center gap-1 mt-1.5">
+                                        {/* <div className="flex justify-center items-center gap-1 mt-1.5">
                                             {[...Array(5)].map((_, starIndex) => (
                                                 <div
                                                     key={starIndex}
@@ -112,7 +112,7 @@ function Skills() {
                                                     }}
                                                 />
                                             ))}
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div>
 
