@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import projectsData from './Portfolio.json';
 import { CiWarning } from "react-icons/ci";
 import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
 
 const Portfolio = () => {
     const { t, i18n } = useTranslation();
@@ -62,11 +63,18 @@ const Portfolio = () => {
 const ProjectCard = ({ project, onError, index }) => {
     const { t } = useTranslation();
     return (
-        <div
+        <motion.div
             className="group relative h-[310px]"
             style={{
                 animationDelay: `${index * 100}ms` // تأخیر انیمیشن برای هر کارت
             }}
+            whileHover={{
+                scale: 1.05,
+                transition: { duration: 0.1 }
+            }}
+            transition={{ duration: 0.5 }}
+            onHoverStart={() => console.log('Hover starts')}
+            onHoverEnd={() => console.log('Hover ends')}
         >
             <div className="relative bg-white/20 backdrop-blur-lg border border-white/30 rounded-xl p-2 
                           shadow-md hover:shadow-xl transition-all duration-500 
@@ -115,7 +123,7 @@ const ProjectCard = ({ project, onError, index }) => {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 };
 

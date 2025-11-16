@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
 import skillsData from './Skill.json';
 
 function Skills() {
@@ -42,12 +43,19 @@ function Skills() {
 
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 gap-4">
                     {skills.map((skill, index) => (
-                        <div
+                        <motion.div
                             key={skill.id}
                             className="group relative"
                             style={{
                                 animationDelay: `${index * 100}ms`
                             }}
+                            whileHover={{
+                                scale: 1.05,
+                                transition: { duration: 0.1 }
+                            }}
+                            transition={{ duration: 0.5 }}
+                            onHoverStart={() => console.log('Hover starts')}
+                            onHoverEnd={() => console.log('Hover ends')}
                         >
                             <div className="relative bg-white/20 backdrop-blur-lg border border-white/30 rounded-xl p-3 
                             shadow-xl hover:shadow-2xl transition-all duration-500 
@@ -121,7 +129,7 @@ function Skills() {
                                 <div className="absolute bottom-0 left-0 w-10 h-10 bg-gradient-to-tr from-pink-400/20 to-orange-400/20 
                               rounded-tr-xl opacity-50"></div>
                             </div>
-                        </div>
+                        </motion.div>
                     ))}
 
                 </div>

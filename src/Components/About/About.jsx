@@ -122,6 +122,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { FaDownload, FaEye } from 'react-icons/fa6';
 import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
 
 function About() {
     const { t } = useTranslation();
@@ -168,25 +169,41 @@ function About() {
                     {/* Text Content */}
                     <div className="lg:col-span-2 space-y-6">
                         {t('about.description', { returnObjects: true }).map((paragraph, index) => (
-                            <div
+                            <motion.div
                                 key={`para-${index}`}
                                 className="relative bg-white/20 backdrop-blur-lg border border-white/30 
                                 rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-500 
                                 hover:-translate-y-2 group"
+                                whileHover={{
+                                    scale: 1.02,
+                                    transition: { duration: 0.1 }
+                                }}
+                                transition={{ duration: 0.5 }}
+                                onHoverStart={() => console.log('Hover starts')}
+                                onHoverEnd={() => console.log('Hover ends')}
                             >
                                 <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-purple-500/10 to-pink-500/10 
                                             opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
                                 <p className="text-lg leading-relaxed text-gray-800 relative z-10">
                                     {paragraph}
                                 </p>
-                            </div>
+                            </motion.div>
                         ))}
                     </div>
 
                     {/* Download Card */}
-                    <div className="relative bg-white/20 backdrop-blur-lg border border-white/30 rounded-2xl 
+                    <motion.div 
+                        className="relative bg-white/20 backdrop-blur-lg border border-white/30 rounded-2xl 
                                 p-8 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2
-                                group overflow-hidden">
+                                group overflow-hidden"
+                        whileHover={{
+                            scale: 1.05,
+                            transition: { duration: 0.1 }
+                        }}
+                        transition={{ duration: 0.5 }}
+                        onHoverStart={() => console.log('Hover starts')}
+                        onHoverEnd={() => console.log('Hover ends')}
+                    >
                         <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-purple-500/10 to-pink-500/10 
                                     opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
                         <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-br from-blue-400/20 to-purple-400/20 
@@ -229,7 +246,7 @@ function About() {
                                 </a>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </section>

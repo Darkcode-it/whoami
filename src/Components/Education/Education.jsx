@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { AcademicCapIcon, TrophyIcon } from '@heroicons/react/24/outline';
 import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
 
 function EducationTimeline() {
     const { t } = useTranslation();
@@ -60,9 +61,18 @@ const EducationCard = ({ edu, index, totalItems }) => {
 
             {/* Content Container */}
             <div className={`md:w-1/2 ${index % 2 === 0 ? 'md:pr-8' : 'md:pl-8'} relative`}>
-                <div className="relative bg-white/20 backdrop-blur-lg border border-white/30 rounded-2xl 
+                <motion.div 
+                    className="relative bg-white/20 backdrop-blur-lg border border-white/30 rounded-2xl 
                     p-8 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2
-                    group-hover:bg-white/30 overflow-hidden">
+                    group-hover:bg-white/30 overflow-hidden"
+                    whileHover={{
+                        scale: 1.02,
+                        transition: { duration: 0.1 }
+                    }}
+                    transition={{ duration: 0.5 }}
+                    onHoverStart={() => console.log('Hover starts')}
+                    onHoverEnd={() => console.log('Hover ends')}
+                >
 
                     {/* Gradient Overlays */}
                     <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-purple-500/10 to-pink-500/10 
@@ -114,7 +124,7 @@ const EducationCard = ({ edu, index, totalItems }) => {
                             ))}
                         </ul>
                     </div>
-                </div>
+                </motion.div>
             </div>
         </article>
     );

@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { FiCode, FiLayers, FiBookOpen } from 'react-icons/fi';
 import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
 
 function Services() {
     const { t } = useTranslation();
@@ -39,7 +40,7 @@ function Services() {
                 {/* Services Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {t('services.items', { returnObjects: true }).map((service, index) => (
-                        <div
+                        <motion.div
                             key={service.id}
                             className="group relative bg-white/20 backdrop-blur-lg border border-white/30 rounded-xl p-6 
                                         shadow-xl hover:shadow-2xl transition-all duration-500 
@@ -47,6 +48,13 @@ function Services() {
                             style={{
                                 animationDelay: `${index * 100}ms` // تأخیر انیمیشن برای هر کارت
                             }}
+                            whileHover={{
+                                scale: 1.05,
+                                transition: { duration: 0.1 }
+                            }}
+                            transition={{ duration: 0.5 }}
+                            onHoverStart={() => console.log('Hover starts')}
+                            onHoverEnd={() => console.log('Hover ends')}
                         >
                             {/* افکت گرادیان هنگام هاور */}
                             <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-purple-500/10 to-pink-500/10 
@@ -84,7 +92,7 @@ function Services() {
                                           rounded-bl-2xl opacity-50"></div>
                             <div className="absolute bottom-0 left-0 w-12 h-12 bg-gradient-to-tr from-pink-400/20 to-orange-400/20 
                                           rounded-tr-2xl opacity-50"></div>
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
             </div>
